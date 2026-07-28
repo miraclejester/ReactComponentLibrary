@@ -1,0 +1,55 @@
+﻿div.banner {
+    width: 80%;
+    padding: 16px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    font-family: Inter, sans-serif;
+    font-size: 0.875rem;
+    row-gap: 8px;
+    column-gap: 4px;
+    border-radius: 6px;
+    align-items: center;
+}
+
+div.banner-success {
+    background-color: #ECFDF5;
+    --title-color: #065F46;
+    --body-color: #047857;
+}
+
+div.banner-warning {
+    background-color: #FFFBEB;
+    --title-color: #92400E;
+    --body-color: #B45309;
+}
+
+div.banner-error {
+    background-color: #FEF2F2;
+    --title-color: #92400E;
+    --body-color: #B45309;
+}
+
+div.banner-neutral {
+    background-color: #EFF6FF;
+    --title-color: #1E40AF;
+    --body-color: #1C51B9;
+}
+
+div.banner > svg {
+    width: 16px;
+    height: 16px;
+}
+
+p.banner-title {
+    color: var(--title-color);
+    margin: 0;
+    font-weight: bold;
+}
+
+p.banner-body {
+    color: var(--body-color);
+    margin: 0;
+    grid-column-start: 2;
+    font-weight: 400;
+}
