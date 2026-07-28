@@ -8,7 +8,8 @@ body {
     padding: 10px;
     display: flex;
     justify-content: center;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
+    background-color: gray;
 }
 
 .star {

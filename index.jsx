@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Button from "./components/Button/Button";
+import Badge from "./components/Badge/Badge";
 
 function App() {
   return (
-      <Button size="lg" variant="success">Sample</Button>
+      <Badge variant='pill' color='yellow'>Badge</Badge>
   )
 }
 
