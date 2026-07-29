@@ -5,23 +5,32 @@ import Badge from "./components/Badge/Badge";
 import Banner from "./components/Banner/index";
 import Card from "./components/Card/Card";
 import {IoCloudUploadOutline} from "react-icons/io5";
+import Testimonial from "./components/Testimonial/Testimonial";
+import userSrc from "./assets/user.jpg";
 
 function App() {
   return (
       <>
           <br />
           <br />
-          <Card>
-              <Card.Icon>
-                  <IoCloudUploadOutline style={{color: 'white'}} />
-              </Card.Icon>
-              <Card.Title>
-                  Easy Deployment
-              </Card.Title>
-              <Card.Body>
-                  Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-              </Card.Body>
-          </Card>
+          <Testimonial>
+              <Testimonial.Image src={userSrc} alt="user" />
+              <Testimonial.Header />
+              <Testimonial.Body>
+                  <Testimonial.Figure>
+                      <Testimonial.Quote>
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet 
+                              augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit.
+                          </p>
+                      </Testimonial.Quote>
+                      <Testimonial.Caption>
+                          <h2>May Andersons</h2>
+                          <p>Workcation, CTO</p>
+                      </Testimonial.Caption>
+                  </Testimonial.Figure>
+              </Testimonial.Body>
+          </Testimonial>
       </>
   )
 }
