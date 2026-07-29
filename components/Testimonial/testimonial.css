@@ -1,7 +1,6 @@
 ﻿div.testimonial {
     width: 376px;
     height: 654px;
-    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -14,7 +13,7 @@ img.testimonial-image {
     object-position: center 32%;
     box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     position: absolute;
-    top: 0;
+    top: -98px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -31,6 +30,7 @@ div.testimonial-body {
     width: 100%;
     padding-inline: 16px;
     padding-top: 250px;
+    position: relative;
 }
 
 figure.testimonial-figure {
@@ -56,7 +56,7 @@ blockquote.testimonial-quote:before {
     margin: 0;
     position: absolute;
     letter-spacing: -8px;
-    top: 240px;
+    top: 128px;
     left: 4px;
 }
 
@@ -74,4 +74,33 @@ figcaption.testimonial-caption > h2 {
 figcaption.testimonial-caption > p {
     margin-top: 4px;
     font-size: 1rem;
+}
+
+@media (min-width: 1300px) {
+    div.testimonial {
+        width: 100%;
+        flex-direction: row;
+    }
+    
+    div.testimonial-header {
+        display: none;
+    }
+
+    img.testimonial-image {
+        width: 28%;
+        left: 18%;
+        top: -25px;
+        height: 464px;
+    }
+
+    div.testimonial-body {
+        max-height: 400px;
+        width: 100%;
+        padding: 160px 0 16px 35%;
+    }
+
+    blockquote.testimonial-quote:before {
+        top: 64px;
+        left: 34%;
+    }
 }

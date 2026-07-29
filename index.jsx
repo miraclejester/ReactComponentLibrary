@@ -14,9 +14,9 @@ function App() {
           <br />
           <br />
           <Testimonial>
-              <Testimonial.Image src={userSrc} alt="user" />
               <Testimonial.Header />
               <Testimonial.Body>
+                  <Testimonial.Image src={userSrc} alt="user" />
                   <Testimonial.Figure>
                       <Testimonial.Quote>
                           <p>
