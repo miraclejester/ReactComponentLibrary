@@ -1,3 +1,3 @@
 # React Components Library
 
-Small components library for React made for practice
+Reusable React component library 6 accessible components
